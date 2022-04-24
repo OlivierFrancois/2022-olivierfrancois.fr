@@ -3,5 +3,81 @@
 {% block title %}Poke{% endblock %}
 
 {% block body %}
-    <div class="bg-red-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa dolorem est itaque iusto magni porro repellendus repudiandae suscipit. Accusamus consequatur maiores officia possimus rem sunt veniam voluptate! Asperiores, commodi cumque cupiditate eaque est excepturi impedit ipsa maxime nostrum quam, quibusdam ratione recusandae rem vel vitae. Ab eius tempora voluptate.</div>
+
+    <nav></nav>
+
+    <main class="flex flex-col">
+        <header class="flex flex-col gap-5 px-28 py-14 shadow">
+            <h1 class="ml-5 font-acme text-7xl">Olivier François</h1>
+
+            <div class="flex gap-10">
+                <img class="w-28" src="{{ asset('assets/logo.svg') }}" alt="">
+
+                <div class="flex flex-col gap-3">
+                    <h2 class="font-acme text-5xl"><span class="text-secondary">Magicien</span> du <span class="text-primary">Web</span></h2>
+                    <h3 class="text-lightgrey text-xl">//Développeur full-stack</h3>
+                </div>
+            </div>
+        </header>
+
+        <div id="presentation" class="bg-primary py-14 px-20 text-white text-md relative shadow">
+            <div class="w-16 -translate-y-[99%] absolute right-[15%] top-0">
+                <img src="{{ asset('assets/piti_bonhomme.svg') }}" alt="">
+            </div>
+
+            <div class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias commodi corporis delectus excepturi fugit impedit iure magnam omnis, perferendis perspiciatis praesentium recusandae reiciendis rem sed totam vel veniam vitae!
+            </div>
+        </div>
+
+        <div class="pl-20 py-5 shadow" id="dans-mon-chapeau">
+            <div>
+                <div class="flex gap-2">
+                    <img class="h-8 w-auto" src="{{ asset('/assets/chapo.svg') }}" alt="">
+
+                    <h2 class="font-acme text-3xl">
+                        Dans mon chapeau
+                    </h2>
+                </div>
+
+                <h3 class="font-acme text-lightgrey">// Mes compétences</h3>
+            </div>
+
+            <div class="flex justify-center items-center gap-20">
+                <ul>
+                    <li>Autodidacte</li>
+                    <li>Développement Back & Front</li>
+                    <li>Compétence 3</li>
+                    <li>Compétence 4</li>
+                </ul>
+
+                <div class="h-60">
+                    <img class="h-full w-auto" src="{{ asset('assets/crapouille.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="pl-20 py-5 shadow bg-[#d6fffe]" id="mes-potions">
+            <div class="flex gap-2">
+
+                <h2 class="font-acme text-3xl">
+                    Mes potions
+                </h2>
+            </div>
+
+            <h3 class="font-acme text-lightgrey">// Mes outils et langages</h3>
+        </div>
+
+        <div class="pl-20 py-5 shadow" id="dans-mon-grimmoire">
+            <div class="flex gap-2">
+                <img class="h-8 w-auto" src="{{ asset('/assets/grimoire.svg') }}" alt="">
+
+                <h2 class="font-acme text-3xl">
+                    Dans mon grimoire
+                </h2>
+            </div>
+
+            <h3 class="font-acme text-lightgrey">// Mes projets</h3>
+        </div>
+    </main>
 {% endblock %}

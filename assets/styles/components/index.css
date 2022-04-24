@@ -1,0 +1,19 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+    padding-left: 2rem;
+    background-image: url(chapo.svg);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+}
+
+nav {
+    @apply text-smoothwhite fixed h-screen w-20 bg-dark;
+}
+
+main {
+    @apply ml-20;
+}
