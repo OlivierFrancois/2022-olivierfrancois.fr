@@ -11,7 +11,7 @@ ul li {
 }
 
 nav {
-    @apply text-smoothwhite fixed h-screen w-20 bg-dark;
+    @apply text-smoothwhite fixed h-screen w-20 bg-dark shadow-xl;
 }
 
 main {
