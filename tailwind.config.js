@@ -7,12 +7,9 @@ module.exports = {
     theme: {
         extend: {
             colors : {
-                primary: '#08afab',
-                primarylight: '#26ccb0',
-                secondary: '#92268e',
-                dark: '#2a2a2a',
-                lightgrey: '#bfbfbf',
-                smoothwhite: '#f1f1f1',
+                theme: {
+                    primary: '#175773'
+                }
             },
             transitionProperty: {
                 fweight: "font-weight"

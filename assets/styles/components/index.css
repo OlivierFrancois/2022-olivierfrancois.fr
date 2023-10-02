@@ -1,19 +1,20 @@
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-}
-
-ul li {
-    padding-left: 2rem;
-    background-image: url(chapo.svg);
-    background-position: 0 0;
-    background-size: 1.6rem 1.6rem;
-    background-repeat: no-repeat;
-}
-
-nav {
-    @apply text-smoothwhite fixed h-screen w-20 bg-dark shadow-xl;
-}
-
-main {
-    @apply ml-20;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
