@@ -1,0 +1,23 @@
+version: '3'
+services:
+  db:
+    container_name: 'olivierfrancois.fr-database'
+    image: mysql:5.7
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_DATABASE=olivierfrancois
+  web:
+    container_name: 'olivierfrancois.fr-webserver'
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      - PMA_ARBITRARY=1  # Autorisez la connexion à n'importe quelle base de données MySQL
+    depends_on:
+      - db
